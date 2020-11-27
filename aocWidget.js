@@ -1,9 +1,21 @@
 /*
- *   set your leaderboard ID and session cookie here
+ *  See: 
+ *    * https://github.com/davekch/aoc-leaderboard-widget/
+ *    * https://www.reddit.com/r/adventofcode/comments/k1oq59/i_shamelessly_copied_utymscars_idea_of_an_ios/
+ * 
+ *  Steps:
+ *    1. Install the iOS [Scriptable](https://apps.apple.com/us/app/scriptable/id1405459188) app.
+ *    2. Set your leaderboard ID and session cookie below.
+ *    3. Import/Copy this script into it.
+ *    4. Set up a home-screen widget with the script!
  */
 
 const YEAR = "2020";
+
+// Your private leaderboard ID (not the join-code) from the URL. e.g. from https://adventofcode.com/2020/leaderboard/private/view/<LEADERBOARD-ID>
 const LEADERBOARD_ID = "";
+
+// Get the session cookie (without the "session=" part): https://github.com/wimglenn/advent-of-code-wim/issues/1
 const SESSION_COOKIE = "";
 
 const YELLOW = new Color("#ffffcc");

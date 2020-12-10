@@ -25,7 +25,8 @@ const DARKGREEN = new Color("#0f6922");
 const FONT = new Font("Menlo", 12);
 const FONTLARGE = new Font("Menlo", 18);
 
-const url = `https://adventofcode.com/${YEAR}/leaderboard/private/view/${LEADERBOARD_ID}.json`
+const base_url = `https://adventofcode.com/${YEAR}/leaderboard/private/view/${LEADERBOARD_ID}`
+const url = base_url + ".json";
 
 
 async function getLeaderboard() {
@@ -64,6 +65,7 @@ async function createWidget() {
   const widget = new ListWidget();
   widget.spacing = 4;
   widget.backgroundColor = DARKBLUE;
+  widget.url = base_url;
   const title = widget.addText(`AoC ${YEAR}`);
   title.font = FONTLARGE;
   title.textColor = DARKGREEN;

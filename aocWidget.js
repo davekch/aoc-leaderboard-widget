@@ -64,6 +64,7 @@ async function createWidget() {
   const widget = new ListWidget();
   widget.spacing = 4;
   widget.backgroundColor = DARKBLUE;
+  widget.url = url;
   const title = widget.addText(`AoC ${YEAR}`);
   title.font = FONTLARGE;
   title.textColor = DARKGREEN;

@@ -34,7 +34,8 @@ async function getLeaderboard() {
     console.log("fetching leaderboard...");
     const request = new Request(url);
     request.headers = {
-      cookie: `session=${SESSION_COOKIE}`
+      cookie: `session=${SESSION_COOKIE}`,
+      "User-Agent": "https://github.com/davekch/aoc-leaderboard-widget by dave-koch@web.de"
     };
     const response = await request.loadJSON();
     return response;
